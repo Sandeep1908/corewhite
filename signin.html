@@ -179,7 +179,7 @@
 
 
 <script>
-  let isScholarLogin = localStorage.getItem("isCore White ");
+  let isScholarLogin = localStorage.getItem("isCorewhite ");
   if (!isScholarLogin) {
     document.getElementById("signin-button").style = "display:block";
    
@@ -196,6 +196,7 @@
     window.localStorage.removeItem("isScholarLogin");
     window.location.replace("/index.html");
   });
+
 </script>
 
 
@@ -207,10 +208,10 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 // Create a single Supabase client for interacting with your database
-let supabase = createClient(
-  "https://buixytamvfelquyeppbx.supabase.co",
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ1aXh5dGFtdmZlbHF1eWVwcGJ4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjEyMDIxNzksImV4cCI6MjAzNjc3ODE3OX0.Kh-hRpWplNbxj6d2YrIjR3Q57czTHPWlsny2IvrtFEs"
-);
+  let supabase = createClient(
+    "https://wgxpucgoyxdujafkxsqv.supabase.co",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndneHB1Y2dveXhkdWphZmt4c3F2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjI0MTk2NTYsImV4cCI6MjAzNzk5NTY1Nn0.KKfO46TAVNbq08LGmu4VNdLgw8FUgRsj7vhQ8R7cX50"
+  );
 
 
 //   login user
@@ -246,10 +247,10 @@ let supabase = createClient(
                     if (e.password === password) {
                       alert("Login successfull");
                       window.localStorage.setItem(
-                        "isCore White ",
+                        "isCorewhite",
                         "mysecrettokeniscrownstone"
                       );
-                      window.localStorage.setItem("Core White email",email)
+                      window.localStorage.setItem("corewhiteemail",email)
                       window.location.replace("/index.html");
                     } else {
                       alert("Invalid credentials");
