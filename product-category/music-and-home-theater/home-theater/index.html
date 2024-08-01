@@ -5610,6 +5610,12 @@
             flex-direction: column;
         }
     }
+    .woocommerce-Price-currencySymbol{
+            display: none !important;
+        }
+        .price del{
+            display: none !important;;
+        }
     </style>
   </head>
   <body
@@ -19114,6 +19120,30 @@ role="banner"
 	
 	
 	  </script>
+      <script>
+
+        // Example using a fixed exchange rate
+  function convertINRtoAED(amountInINR) {
+    console.log("inise fn",amountInINR);
+   
+    const exchangeRate = 0.045; // Example exchange rate: 1 INR = 0.045 AED
+    const amountInAED = amountInINR * exchangeRate;
+    return amountInAED;
+  }
+  
+  
+  
+  
+  
+  
+        const pricelist=document.getElementsByClassName('woocommerce-Price-amount')
+        for(let x of pricelist){
+         const price=x.innerText.replace(',','')
+         const aedPrice=convertINRtoAED(parseInt(price))
+         x.innerText=''+aedPrice.toFixed(2) +' AED'
+         
+        }
+      </script>
  
   </body>
   
