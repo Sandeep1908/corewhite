@@ -6907,7 +6907,7 @@ role="banner"
                                                                 ><bdi
                                                                   ><span
                                                                     class="woocommerce-Price-currencySymbol"
-                                                                    >₹</span
+                                                                    > </span
                                                                   >72,999.00</bdi
                                                                 ></span
                                                               ></del
@@ -6918,7 +6918,7 @@ role="banner"
                                                                 ><bdi
                                                                   ><span
                                                                     class="woocommerce-Price-currencySymbol"
-                                                                    >₹</span
+                                                                    > </span
                                                                   >59,990.00</bdi
                                                                 ></span
                                                               ></ins
@@ -7058,8 +7058,8 @@ role="banner"
                                                             (0)
                                                           </div>
                                                         </div>
-                                                        <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">₹</span>46,990.00</bdi></span></del>
-                                                          <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">₹</span>33,990.00</bdi></span></ins></span>
+                                                        <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol"> </span>46,990.00</bdi></span></del>
+                                                          <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol"> </span>33,990.00</bdi></span></ins></span>
                                                       </div>
                                                     </div>
                                                     <div class="groups-button clearfix">
@@ -7140,8 +7140,8 @@ role="banner"
                                                             (0)
                                                           </div>
                                                         </div>
-                                                        <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">₹</span>97,890.00</bdi></span></del>
-                                                          <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">₹</span>66,990.00</bdi></span></ins></span>
+                                                        <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol"> </span>97,890.00</bdi></span></del>
+                                                          <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol"> </span>66,990.00</bdi></span></ins></span>
                                                       </div>
                                                     </div>
                                                     <div class="groups-button clearfix">
@@ -7224,7 +7224,7 @@ role="banner"
                                   </div>
                                   <div class="count">(0)</div>
                                   </div>
-                                  <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">₹</span>125,990.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">₹</span>83,500.00</bdi></span></ins></span>
+                                  <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol"> </span>125,990.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol"> </span>83,500.00</bdi></span></ins></span>
                                                   
                                               </div>
                                           </div>  
@@ -8643,6 +8643,33 @@ role="banner"
     ></script>
 
 
+
+    <script>
+
+      // Example using a fixed exchange rate
+function convertINRtoAED(amountInINR) {
+  console.log("inise fn",amountInINR);
+ 
+  const exchangeRate = 0.045; // Example exchange rate: 1 INR = 0.045 AED
+  const amountInAED = amountInINR * exchangeRate;
+  return amountInAED;
+}
+
+
+
+
+
+
+      const pricelist=document.getElementsByClassName('woocommerce-Price-amount')
+      for(let x of pricelist){
+       const price=x.innerText.replace(',','')
+       const aedPrice=convertINRtoAED(parseInt(price))
+       x.innerText=''+aedPrice.toFixed(2) +' AED'
+       
+      }
+    </script>
+
+
 	<script>
 		
 		let isCoreWhiteLogin = localStorage.getItem("isCorewhite");
@@ -8674,6 +8701,7 @@ role="banner"
 	
 	
 	  </script>
+
  
   </body>
   

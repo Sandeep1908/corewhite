@@ -33699,7 +33699,8 @@ ul.list-category li:first-child a {
     }
 
     .singular-shop div.product .information .price del {
-        font-size: 18px
+        font-size: 18px;
+        display: none;
     }
 
     .singular-shop div.product .information .cart .box-quantity .title-qty {
@@ -34121,7 +34122,7 @@ ul.list-category li:first-child a {
     }
 
     .product-block .price del {
-        display: inline-block
+        display: none;
     }
 
     .product-block .price {
