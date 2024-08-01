@@ -18805,7 +18805,8 @@ ul.show-brand li a {
 
 @media(max-width:767px) {
     .products-grid .product:nth-child(2n+1) {
-        clear: both
+        clear: both;
+        width:167px;
     }
 
     .products-grid .product-category {

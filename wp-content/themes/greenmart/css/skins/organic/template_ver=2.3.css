@@ -4354,6 +4354,7 @@ pre code {
     margin-right: -15px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .row:before,
@@ -34094,7 +34095,8 @@ ul.list-category li:first-child a {
     }
 
     .product-block.grid {
-        margin: 0 0 10px
+        margin: 0 0 10px;
+        width:167px;
     }
 
     .wpb_row.vc_row {
