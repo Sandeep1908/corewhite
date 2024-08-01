@@ -6836,10 +6836,10 @@ role="banner"
                                                 <span class="price"><del
                                                         aria-hidden="true"><span
                                                             class="woocommerce-Price-amount amount"><bdi><span
-                                                                    class="woocommerce-Price-currencySymbol">₹</span>30,000.00</bdi></span></del>
+                                                                    class="woocommerce-Price-currencySymbol"> </span>30,000.00</bdi></span></del>
                                                     <ins><span
                                                             class="woocommerce-Price-amount amount"><bdi><span
-                                                                    class="woocommerce-Price-currencySymbol">₹</span>16,999.00</bdi></span></ins></span>
+                                                                    class="woocommerce-Price-currencySymbol"> </span>16,999.00</bdi></span></ins></span>
 
                                             </div>
                                         </div>
@@ -7000,10 +7000,10 @@ role="banner"
                                                 <span class="price"><del
                                                         aria-hidden="true"><span
                                                             class="woocommerce-Price-amount amount"><bdi><span
-                                                                    class="woocommerce-Price-currencySymbol">₹</span>25,999.00</bdi></span></del>
+                                                                    class="woocommerce-Price-currencySymbol"> </span>25,999.00</bdi></span></del>
                                                     <ins><span
                                                             class="woocommerce-Price-amount amount"><bdi><span
-                                                                    class="woocommerce-Price-currencySymbol">₹</span>18,777.00</bdi></span></ins></span>
+                                                                    class="woocommerce-Price-currencySymbol"> </span>18,777.00</bdi></span></ins></span>
 
                                             </div>
                                         </div>
@@ -8416,6 +8416,32 @@ role="banner"
       src="/wp-content/plugins/woocommerce/assets/js/frontend/price-slider.min_ver%3D7.1.1.js"
       id="wc-price-slider-js"
     ></script>
+
+
+    <script>
+
+      // Example using a fixed exchange rate
+function convertINRtoAED(amountInINR) {
+  console.log("inise fn",amountInINR);
+ 
+  const exchangeRate = 0.045; // Example exchange rate: 1 INR = 0.045 AED
+  const amountInAED = amountInINR * exchangeRate;
+  return amountInAED;
+}
+
+
+
+
+
+
+      const pricelist=document.getElementsByClassName('woocommerce-Price-amount')
+      for(let x of pricelist){
+       const price=x.innerText.replace(',','')
+       const aedPrice=convertINRtoAED(parseInt(price))
+       x.innerText=''+aedPrice.toFixed(2) +' AED'
+       
+      }
+    </script>
 
 
 	<script>

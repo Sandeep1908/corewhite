@@ -17336,7 +17336,8 @@ input[type="button"].btn-block {
 .woocommerce div.product p.price del,
 .woocommerce div.product span.price del {
     opacity: 1;
-    filter: alpha(opacity=100)
+    filter: alpha(opacity=100);
+    display: none;
 }
 
 .variations label {
@@ -17852,7 +17853,7 @@ dl.variation a {
     color: #333;
     margin-right: 7px;
     font-weight: 500;
-    display: block
+    display: none;
 }
 
 .product-block .rating {
@@ -19210,7 +19211,8 @@ ul.show-brand li a {
     font-size: 24px;
     margin-right: 5px;
     margin-left: 0;
-    color: #333
+    color: #333;
+    display: none;
 }
 
 .singular-shop div.product .information .price ins,

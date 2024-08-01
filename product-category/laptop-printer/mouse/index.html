@@ -6856,7 +6856,7 @@ role="banner"
                                           ><bdi
                                             ><span
                                               class="woocommerce-Price-currencySymbol"
-                                              >₹</span
+                                              > </span
                                             >539.00</bdi
                                           ></span
                                         ></del
@@ -6867,7 +6867,7 @@ role="banner"
                                           ><bdi
                                             ><span
                                               class="woocommerce-Price-currencySymbol"
-                                              >₹</span
+                                              > </span
                                             >299.00</bdi
                                           ></span
                                         ></ins
@@ -7055,7 +7055,7 @@ role="banner"
                                         ><bdi
                                           ><span
                                             class="woocommerce-Price-currencySymbol"
-                                            >₹</span
+                                            > </span
                                           >399.00</bdi
                                         ></span
                                       ></span
@@ -7248,7 +7248,7 @@ role="banner"
                                           ><bdi
                                             ><span
                                               class="woocommerce-Price-currencySymbol"
-                                              >₹</span
+                                              > </span
                                             >599.00</bdi
                                           ></span
                                         ></del
@@ -7259,7 +7259,7 @@ role="banner"
                                           ><bdi
                                             ><span
                                               class="woocommerce-Price-currencySymbol"
-                                              >₹</span
+                                              > </span
                                             >499.00</bdi
                                           ></span
                                         ></ins
@@ -7431,7 +7431,7 @@ role="banner"
                                           ><bdi
                                             ><span
                                               class="woocommerce-Price-currencySymbol"
-                                              >₹</span
+                                              > </span
                                             >649.00</bdi
                                           ></span
                                         ></del
@@ -7442,7 +7442,7 @@ role="banner"
                                           ><bdi
                                             ><span
                                               class="woocommerce-Price-currencySymbol"
-                                              >₹</span
+                                              > </span
                                             >499.00</bdi
                                           ></span
                                         ></ins
@@ -8867,6 +8867,31 @@ role="banner"
       id="wc-price-slider-js"
     ></script>
 
+
+    <script>
+
+      // Example using a fixed exchange rate
+function convertINRtoAED(amountInINR) {
+  console.log("inise fn",amountInINR);
+ 
+  const exchangeRate = 0.045; // Example exchange rate: 1 INR = 0.045 AED
+  const amountInAED = amountInINR * exchangeRate;
+  return amountInAED;
+}
+
+
+
+
+
+
+      const pricelist=document.getElementsByClassName('woocommerce-Price-amount')
+      for(let x of pricelist){
+       const price=x.innerText.replace(',','')
+       const aedPrice=convertINRtoAED(parseInt(price))
+       x.innerText=''+aedPrice.toFixed(2) +' AED'
+       
+      }
+    </script>
 
 	<script>
 		
