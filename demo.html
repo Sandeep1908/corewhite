@@ -5597,25 +5597,6 @@
         .mm-panel_has-navbar{
            padding-top: 0;
         }
-        .tawk-min-container{
-            display: none !important;
-        }
-        #q21ivnbnhulo1722431919368{
-            display: none !important;
-        }
-        @media (max-width: 768px) {
-            .vc_row.wpb_row.vc_row-fluid.footer-content .container .row {
-            display: flex;
-            justify-content: space-around;
-            flex-direction: column;
-        }
-    }
-    .woocommerce-Price-currencySymbol{
-            display: none !important;
-        }
-        .price del{
-            display: none !important;;
-        }
     </style>
    <style>
         .tawk-min-container{
@@ -6895,9 +6876,9 @@ role="banner"
           <div class="breadscrumb-inner">
               <ol class="tbay-woocommerce-breadcrumb breadcrumb">
                   <li><a href="https://mymec.in">Home</a></li>
-                  <li><a href="/product-category/tv-entertainment/">TV &amp; Entertainment</a>
+                  <li><a href="https://mymec.in/product-category/tv-entertainment/">TV &amp; Entertainment</a>
                   </li>
-                  <li>Televisions Accessories</li>
+                  <li>Televisions</li>
               </ol>
           </div>
       </div>
@@ -6909,7 +6890,7 @@ role="banner"
 
 
 
-          <div id="main-content" class="archive-shop col-xs-12 col-xs-12 col-md-12 col-lg-9 pull-right">
+          <div id="main-content" style="width: 100%;" class="archive-shop col-xs-12 col-xs-12 col-md-12 col-lg-9 pull-right">
 
 
 
@@ -6922,7 +6903,7 @@ role="banner"
 
 
 
-                              <h1 class="page-title title-woocommerce">Televisions Accessories</h1>
+                              <h1 class="page-title title-woocommerce">Televisions</h1>
 
 
 
@@ -6938,10 +6919,10 @@ role="banner"
                               <div class="tbay-filter">
                                   <div class="display-mode-warpper display-mode">
                                       <a href="javascript:void(0);" id="display-mode-grid"
-                                          class="change-view display-mode-btn active" title="'Grid'"><i
+                                          class="change-view display-mode-btn" title="'Grid'"><i
                                               class="ti-layout-grid2"></i></a>
                                       <a href="javascript:void(0);" id="display-mode-list"
-                                          class="change-view display-mode-btn list " title="'List'"><i
+                                          class="change-view display-mode-btn list active" title="'List'"><i
                                               class="ti-view-list"></i></a>
                                   </div>
 
@@ -6968,6 +6949,41 @@ role="banner"
                                                   <div class="woocommerce widget_price_filter">
                                                       <h4>
                                                           Price Range </h4>
+                                                      <form method="get"
+                                                          action="https://mymec.in/product-category/tv-entertainment/televisions/">
+                                                          <div class="price_slider_wrapper">
+                                                              <div class="price_slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
+                                                                  style="">
+                                                                  <div class="ui-slider-range ui-corner-all ui-widget-header"
+                                                                      style="left: 0%; width: 100%;"></div>
+                                                                  <span tabindex="0"
+                                                                      class="ui-slider-handle ui-corner-all ui-state-default"
+                                                                      style="left: 0%;"></span><span
+                                                                      tabindex="0"
+                                                                      class="ui-slider-handle ui-corner-all ui-state-default"
+                                                                      style="left: 100%;"></span>
+                                                              </div>
+                                                              <div class="price_slider_amount">
+                                                                  <input type="text" id="min_price"
+                                                                      name="min_price" value="7999"
+                                                                      data-min="7999" placeholder="Min price"
+                                                                      style="display: none;">
+                                                                  <input type="text" id="max_price"
+                                                                      name="max_price" value="564000"
+                                                                      data-max="564000"
+                                                                      placeholder="Max price"
+                                                                      style="display: none;">
+                                                                  <button type="submit"
+                                                                      class="button">Filter</button>
+                                                                  <div class="price_label" style="">
+                                                                      Price: <span class="from">₹7,999</span>
+                                                                      — <span class="to">₹564,000</span>
+                                                                  </div>
+
+                                                                  <div class="clear"></div>
+                                                              </div>
+                                                          </div>
+                                                      </form>
                                                   </div>
                                               </div>
                                           </div>
@@ -6988,7 +7004,18 @@ role="banner"
                                                       <select class="woof_select woof_select_pa_brand"
                                                           name="pa_brand" style="display: none;">
                                                           <option value="0">BRAND</option>
+                                                          <option value="acer">Acer </option>
                                                           <option value="lg">LG </option>
+                                                          <option value="haier">Haier </option>
+                                                          <option value="lloyd">Lloyd </option>
+                                                          <option value="vu">VU </option>
+                                                          <option value="tcl">TCL </option>
+                                                          <option value="sony">Sony </option>
+                                                          <option value="samsung">Samsung </option>
+                                                          <option value="hisense">Hisense </option>
+                                                          <option value="dektron">Dektron </option>
+                                                          <option value="croam">Croam </option>
+                                                          <option value="akiva">Akiva </option>
                                                       </select>
                                                       <div class="chosen-container chosen-container-single"
                                                           style="width: 0px;" title=""><a
@@ -7004,8 +7031,30 @@ role="banner"
                                                       </div>
 
 
+                                                      <input type="hidden" value="Acer"
+                                                          data-anchor="woof_n_pa_brand_acer">
                                                       <input type="hidden" value="LG"
                                                           data-anchor="woof_n_pa_brand_lg">
+                                                      <input type="hidden" value="Haier"
+                                                          data-anchor="woof_n_pa_brand_haier">
+                                                      <input type="hidden" value="Lloyd"
+                                                          data-anchor="woof_n_pa_brand_lloyd">
+                                                      <input type="hidden" value="VU"
+                                                          data-anchor="woof_n_pa_brand_vu">
+                                                      <input type="hidden" value="TCL"
+                                                          data-anchor="woof_n_pa_brand_tcl">
+                                                      <input type="hidden" value="Sony"
+                                                          data-anchor="woof_n_pa_brand_sony">
+                                                      <input type="hidden" value="Samsung"
+                                                          data-anchor="woof_n_pa_brand_samsung">
+                                                      <input type="hidden" value="Hisense"
+                                                          data-anchor="woof_n_pa_brand_hisense">
+                                                      <input type="hidden" value="Dektron"
+                                                          data-anchor="woof_n_pa_brand_dektron">
+                                                      <input type="hidden" value="Croam"
+                                                          data-anchor="woof_n_pa_brand_croam">
+                                                      <input type="hidden" value="Akiva"
+                                                          data-anchor="woof_n_pa_brand_akiva">
                                                   </div>
 
                                                   <input type="hidden" name="woof_t_pa_brand"
@@ -7556,6 +7605,13 @@ role="banner"
                                                       <select class="woof_select woof_select_pa_screen-size"
                                                           name="pa_screen-size" style="display: none;">
                                                           <option value="0">SCREEN SIZE</option>
+                                                          <option value="24-28-inch">24 - 28 inch </option>
+                                                          <option value="28-32-inch">28 - 32 inch </option>
+                                                          <option value="39-43-inch">39 - 43 inch </option>
+                                                          <option value="48-55-inch">48 - 55 inch </option>
+                                                          <option value="65-75-inch">65 - 75 inch </option>
+                                                          <option value="85-inch-above">85 inch &amp; Above
+                                                          </option>
                                                       </select>
                                                       <div class="chosen-container chosen-container-single"
                                                           style="width: 0px;" title=""><a
@@ -7569,13 +7625,20 @@ role="banner"
                                                               <ul class="chosen-results"></ul>
                                                           </div>
                                                       </div>
-                                                      <style type="text/css">
-                                                          .woof_container_pa_screen-size {
-                                                              display: none !important;
-                                                          }
-                                                      </style>
 
 
+                                                      <input type="hidden" value="24 - 28 inch"
+                                                          data-anchor="woof_n_pa_screen-size_24-28-inch">
+                                                      <input type="hidden" value="28 - 32 inch"
+                                                          data-anchor="woof_n_pa_screen-size_28-32-inch">
+                                                      <input type="hidden" value="39 - 43 inch"
+                                                          data-anchor="woof_n_pa_screen-size_39-43-inch">
+                                                      <input type="hidden" value="48 - 55 inch"
+                                                          data-anchor="woof_n_pa_screen-size_48-55-inch">
+                                                      <input type="hidden" value="65 - 75 inch"
+                                                          data-anchor="woof_n_pa_screen-size_65-75-inch">
+                                                      <input type="hidden" value="85 inch &amp; Above"
+                                                          data-anchor="woof_n_pa_screen-size_85-inch-above">
                                                   </div>
 
                                                   <input type="hidden" name="woof_t_pa_screen-size"
@@ -7632,6 +7695,9 @@ role="banner"
                                                       <select class="woof_select woof_select_pa_resolution"
                                                           name="pa_resolution" style="display: none;">
                                                           <option value="0">RESOLUTION</option>
+                                                          <option value="full-hd">FULL HD </option>
+                                                          <option value="hd-ready">HD READY </option>
+                                                          <option value="4k">4K / UHD </option>
                                                       </select>
                                                       <div class="chosen-container chosen-container-single"
                                                           style="width: 0px;" title=""><a
@@ -7645,13 +7711,14 @@ role="banner"
                                                               <ul class="chosen-results"></ul>
                                                           </div>
                                                       </div>
-                                                      <style type="text/css">
-                                                          .woof_container_pa_resolution {
-                                                              display: none !important;
-                                                          }
-                                                      </style>
 
 
+                                                      <input type="hidden" value="FULL HD"
+                                                          data-anchor="woof_n_pa_resolution_full-hd">
+                                                      <input type="hidden" value="HD READY"
+                                                          data-anchor="woof_n_pa_resolution_hd-ready">
+                                                      <input type="hidden" value="4K / UHD"
+                                                          data-anchor="woof_n_pa_resolution_4k">
                                                   </div>
 
                                                   <input type="hidden" name="woof_t_pa_resolution"
@@ -7670,6 +7737,12 @@ role="banner"
                                                       <select class="woof_select woof_select_pa_technology"
                                                           name="pa_technology" style="display: none;">
                                                           <option value="0">TECHNOLOGY</option>
+                                                          <option value="led">LED </option>
+                                                          <option value="nanocell-suhd">NANOCELL </option>
+                                                          <option value="oled">OLED </option>
+                                                          <option value="qled">QLED </option>
+                                                          <option value="qned">QNED </option>
+                                                          <option value="4k-uhd">4K UHD </option>
                                                       </select>
                                                       <div class="chosen-container chosen-container-single"
                                                           style="width: 0px;" title=""><a
@@ -7683,13 +7756,20 @@ role="banner"
                                                               <ul class="chosen-results"></ul>
                                                           </div>
                                                       </div>
-                                                      <style type="text/css">
-                                                          .woof_container_pa_technology {
-                                                              display: none !important;
-                                                          }
-                                                      </style>
 
 
+                                                      <input type="hidden" value="LED"
+                                                          data-anchor="woof_n_pa_technology_led">
+                                                      <input type="hidden" value="NANOCELL"
+                                                          data-anchor="woof_n_pa_technology_nanocell-suhd">
+                                                      <input type="hidden" value="OLED"
+                                                          data-anchor="woof_n_pa_technology_oled">
+                                                      <input type="hidden" value="QLED"
+                                                          data-anchor="woof_n_pa_technology_qled">
+                                                      <input type="hidden" value="QNED"
+                                                          data-anchor="woof_n_pa_technology_qned">
+                                                      <input type="hidden" value="4K UHD"
+                                                          data-anchor="woof_n_pa_technology_4k-uhd">
                                                   </div>
 
                                                   <input type="hidden" name="woof_t_pa_technology"
@@ -7861,6 +7941,13 @@ role="banner"
                                                       <select class="woof_select woof_select_pa_connectivity"
                                                           name="pa_connectivity" style="display: none;">
                                                           <option value="0">CONNECTIVITY</option>
+                                                          <option value="bluetooth">Bluetooth </option>
+                                                          <option value="built-in-wifi">Built-In WiFi
+                                                          </option>
+                                                          <option value="ethernet">Ethernet </option>
+                                                          <option value="hdmi">HDMI </option>
+                                                          <option value="usb">USB </option>
+                                                          <option value="wifi">WiFi </option>
                                                       </select>
                                                       <div class="chosen-container chosen-container-single"
                                                           style="width: 0px;" title=""><a
@@ -7874,13 +7961,20 @@ role="banner"
                                                               <ul class="chosen-results"></ul>
                                                           </div>
                                                       </div>
-                                                      <style type="text/css">
-                                                          .woof_container_pa_connectivity {
-                                                              display: none !important;
-                                                          }
-                                                      </style>
 
 
+                                                      <input type="hidden" value="Bluetooth"
+                                                          data-anchor="woof_n_pa_connectivity_bluetooth">
+                                                      <input type="hidden" value="Built-In WiFi"
+                                                          data-anchor="woof_n_pa_connectivity_built-in-wifi">
+                                                      <input type="hidden" value="Ethernet"
+                                                          data-anchor="woof_n_pa_connectivity_ethernet">
+                                                      <input type="hidden" value="HDMI"
+                                                          data-anchor="woof_n_pa_connectivity_hdmi">
+                                                      <input type="hidden" value="USB"
+                                                          data-anchor="woof_n_pa_connectivity_usb">
+                                                      <input type="hidden" value="WiFi"
+                                                          data-anchor="woof_n_pa_connectivity_wifi">
                                                   </div>
 
                                                   <input type="hidden" name="woof_t_pa_connectivity"
@@ -8054,6 +8148,8 @@ role="banner"
                                                       <select class="woof_select woof_select_pa_functionality"
                                                           name="pa_functionality" style="display: none;">
                                                           <option value="0">FUNCTIONALITY</option>
+                                                          <option value="regular">Regular </option>
+                                                          <option value="smart">Smart </option>
                                                       </select>
                                                       <div class="chosen-container chosen-container-single"
                                                           style="width: 0px;" title=""><a
@@ -8067,13 +8163,12 @@ role="banner"
                                                               <ul class="chosen-results"></ul>
                                                           </div>
                                                       </div>
-                                                      <style type="text/css">
-                                                          .woof_container_pa_functionality {
-                                                              display: none !important;
-                                                          }
-                                                      </style>
 
 
+                                                      <input type="hidden" value="Regular"
+                                                          data-anchor="woof_n_pa_functionality_regular">
+                                                      <input type="hidden" value="Smart"
+                                                          data-anchor="woof_n_pa_functionality_smart">
                                                   </div>
 
                                                   <input type="hidden" name="woof_t_pa_functionality"
@@ -10941,13 +11036,13 @@ role="banner"
 
                                   <div class="woocommerce woocommerce-page woof_shortcode_output">
                                       <div id="woof_results_by_ajax"
-                                          data-shortcode="woof_products taxonomies=product_cat:759 is_ajax=1 predict_ids_and_continue=1">
+                                          data-shortcode="woof_products taxonomies=product_cat:808 is_ajax=1 predict_ids_and_continue=1">
                                           <div class="woof_products_top_panel_content">
                                           </div>
                                           <div class="woof_products_top_panel" style="display: none;"></div>
                                           <div class="woocommerce-notices-wrapper"></div>
                                           <p class="woocommerce-result-count">
-                                              Showing the single result</p>
+                                              Showing all 81 results</p>
                                           <form class="woocommerce-ordering" method="get">
                                               <span>Sort by: </span>
                                               <div class="SumoSelect sumo_orderby" tabindex="0"><select
@@ -10977,44 +11072,52 @@ role="banner"
                                       </div>
 
 
-                                      <div class="products products-grid products-">
+                                      <div class="products products-list">
                                           <div class="row" data-xlgdesktop="3" data-desktop="3"
                                               data-desktopsmall="3" data-tablet="2" data-mobile="2">
 
 
 
+
+
+
                                               <div
-                                                  class="col-xs-6 col-lg-4 col-md-4 col-sm-6 grid product type-product post-30601 status-publish first instock product_cat-tv-accessories has-post-thumbnail shipping-taxable product-type-simple">
-                                                  <div class="product-block grid " data-product-id="30601">
+                                                  class="col-xs-6 col-lg-4 col-md-4 col-sm-6 grid product type-product post-22521 status-publish last outofstock product_cat-home-appliances product_cat-navaratri-festival-deals product_cat-televisions product_cat-tv-entertainment has-post-thumbnail sale shipping-taxable purchasable product-type-simple">
+                                                  <div class="product-block list" data-product-id="22521">
                                                       <div class="product-content">
                                                           <div class="block-inner">
                                                               <figure class="image">
-                                                                  <a title="LG PQWRHQ0FDB 5 Inch Wireless Individual Controller Line Up"
-                                                                      href="/product/lg-pqwrhq0fdb-5-inch-wireless-individual-controller-line-up/"
-                                                                      class="product-image">
+
+                                                                  <span class="onsale"><span
+                                                                          class="saled">Save 30%</span></span>
+                                                                  <!-- <a title="Lloyd 80cm (32 inch) HD Ready Smart WebOS LED TV (32HS551D)"
+                                                                      href="https://mymec.in/product/lloyd-80cm-32-inch-hd-ready-smart-webos-led-tv-32hs551d/"
+                                                                      class="product-image"> -->
                                                                       <img width="405" height="330"
-                                                                          src="https://mymec.in/wp-content/uploads/2023/08/d-405x330.jpg"
+                                                                          src="https://mymec.in/wp-content/uploads/2022/09/Lloyd-80cm-32HS551D-405x330.jpg"
                                                                           class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
                                                                           alt="" decoding="async"
                                                                           loading="lazy"
-                                                                          srcset="https://mymec.in/wp-content/uploads/2023/08/d-405x330.jpg 405w, https://mymec.in/wp-content/uploads/2023/08/d-160x130.jpg 160w"
-                                                                          sizes="(max-width: 405px) 100vw, 405px">
-                                                                  </a>
+                                                                          srcset="https://mymec.in/wp-content/uploads/2022/09/Lloyd-80cm-32HS551D-405x330.jpg 405w, https://mymec.in/wp-content/uploads/2022/09/Lloyd-80cm-32HS551D-160x130.jpg 160w"
+                                                                          sizes="(max-width: 405px) 100vw, 405px"><span
+                                                                          class="out-stock">Out of
+                                                                          stock</span> 
+                                                                      <!-- </a> -->
 
                                                                   <div class="button-wishlist">
 
-                                                                      <div class="yith-wcwl-add-to-wishlist add-to-wishlist-30601  wishlist-fragment on-first-load"
-                                                                          data-fragment-ref="30601"
-                                                                          data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:30601,&quot;parent_product_id&quot;:30601,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+                                                                      <div class="yith-wcwl-add-to-wishlist add-to-wishlist-22521  wishlist-fragment on-first-load"
+                                                                          data-fragment-ref="22521"
+                                                                          data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:22521,&quot;parent_product_id&quot;:22521,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
 
                                                                           <!-- ADD TO WISHLIST -->
 
                                                                           <div class="yith-wcwl-add-button">
-                                                                              <a href="?add_to_wishlist=30601&amp;_wpnonce=44396b012c"
+                                                                              <a href="?add_to_wishlist=22521&amp;_wpnonce=44396b012c"
                                                                                   class="add_to_wishlist single_add_to_wishlist"
-                                                                                  data-product-id="30601"
+                                                                                  data-product-id="22521"
                                                                                   data-product-type="simple"
-                                                                                  data-original-product-id="30601"
+                                                                                  data-original-product-id="22521"
                                                                                   data-title="<i class=&quot;icofont-heart-alt&quot;></i><span>Wishlist</span>"
                                                                                   rel="nofollow">
                                                                                   <i
@@ -11042,13 +11145,13 @@ role="banner"
                                                                   <div class="infor">
                                                                       <div class="name-subtitle">
                                                                           <h3 class="name">
-                                                                              <a
-                                                                                  href="/product/lg-pqwrhq0fdb-5-inch-wireless-individual-controller-line-up/">
-                                                                                  LG
-                                                                                  PQWRHQ0FDB 5 Inch Wireless
-                                                                                  Individual Controller Line
-                                                                                  Up
-                                                                              </a>
+                                                                              <!-- <a
+                                                                                  href="https://mymec.in/product/lloyd-80cm-32-inch-hd-ready-smart-webos-led-tv-32hs551d/"> -->
+                                                                                  Lloyd
+                                                                                  80cm (32 inch) HD Ready
+                                                                                  Smart WebOS LED TV
+                                                                                  (32HS551D)
+                                                                              <!-- </a> -->
                                                                               </h3>
 
 
@@ -11060,15 +11163,22 @@ role="banner"
                                                                           </div>
                                                                           <div class="count">(0)</div>
                                                                       </div>
+                                                                      <span class="price"><del
+                                                                              aria-hidden="true"><span
+                                                                                  class="woocommerce-Price-amount amount"><bdi><span
+                                                                                          class="woocommerce-Price-currencySymbol">₹</span>25,490.00</bdi></span></del>
+                                                                          <ins><span
+                                                                                  class="woocommerce-Price-amount amount"><bdi><span
+                                                                                          class="woocommerce-Price-currencySymbol">₹</span>17,899.00</bdi></span></ins></span>
 
                                                                   </div>
                                                               </div>
                                                               <div class="groups-button clearfix">
                                                                   <div class="add-cart" title="Read more"><a
-                                                                          href="/product/lg-pqwrhq0fdb-5-inch-wireless-individual-controller-line-up/"
+                                                                          href="https://mymec.in/product/lloyd-80cm-32-inch-hd-ready-smart-webos-led-tv-32hs551d/"
                                                                           rel="nofollow"
-                                                                          data-product_id="30601"
-                                                                          data-product_sku="LG WIRELESS REMOTE PQWRHQ0FDB.APUNE"
+                                                                          data-product_id="22521"
+                                                                          data-product_sku="LLOYD LED 32HS551D-SMART (GL32H4A1UR)"
                                                                           data-quantity="1"
                                                                           class=" button wp-element-button product_type_simple product_type_simple"><i
                                                                               class="icofont-shopping-cart"></i>
@@ -11077,10 +11187,10 @@ role="banner"
 
 
                                                                   <div class="yith-compare">
-                                                                      <a href="/product-category/tv-accessories/?action=yith-woocompare-add-product&amp;id=30601&amp;_wpnonce=33a3b6b694"
+                                                                      <a href="/product-category/tv-entertainment/televisions/?action=yith-woocompare-add-product&amp;id=22521&amp;_wpnonce=33a3b6b694"
                                                                           data-toggle="tooltip" title=""
                                                                           class="compare tbay-tooltip"
-                                                                          data-product_id="30601"
+                                                                          data-product_id="22521"
                                                                           data-original-title="Compare">
                                                                           <i class="icofont-refresh"></i>
                                                                       </a>
@@ -11091,6 +11201,655 @@ role="banner"
                                                       </div>
                                                   </div>
                                               </div>
+
+
+
+                                              <div
+                                                  class="col-xs-6 col-lg-4 col-md-4 col-sm-6 grid product type-product post-16714 status-publish first outofstock product_cat-samsung-product product_cat-televisions product_cat-tv-entertainment has-post-thumbnail sale shipping-taxable purchasable product-type-simple">
+                                                  <div class="product-block list" data-product-id="16714">
+                                                      <div class="product-content">
+                                                          <div class="block-inner">
+                                                              <figure class="image">
+
+                                                                  <span class="onsale"><span
+                                                                          class="saled">Save 20%</span></span>
+                                                                  <!-- <a title="Samsung UA32T4450AKLXL 32Inch Smart LED"
+                                                                      href="https://mymec.in/product/samsung-32t4450-32inch-smart-led/"
+                                                                      class="product-image"> -->
+                                                                      <img width="405" height="330"
+                                                                          src="https://mymec.in/wp-content/uploads/2021/07/New-Project-22-405x330.jpg"
+                                                                          class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                                                          alt="" decoding="async"
+                                                                          loading="lazy"
+                                                                          srcset="https://mymec.in/wp-content/uploads/2021/07/New-Project-22-405x330.jpg 405w, https://mymec.in/wp-content/uploads/2021/07/New-Project-22-160x130.jpg 160w"
+                                                                          sizes="(max-width: 405px) 100vw, 405px"><span
+                                                                          class="out-stock">Out of
+                                                                          stock</span> 
+                                                                      <!-- </a> -->
+
+                                                                  <div class="button-wishlist">
+
+                                                                      <div class="yith-wcwl-add-to-wishlist add-to-wishlist-16714  wishlist-fragment on-first-load"
+                                                                          data-fragment-ref="16714"
+                                                                          data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:16714,&quot;parent_product_id&quot;:16714,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+
+                                                                          <!-- ADD TO WISHLIST -->
+
+                                                                          <div class="yith-wcwl-add-button">
+                                                                              <a href="?add_to_wishlist=16714&amp;_wpnonce=44396b012c"
+                                                                                  class="add_to_wishlist single_add_to_wishlist"
+                                                                                  data-product-id="16714"
+                                                                                  data-product-type="simple"
+                                                                                  data-original-product-id="16714"
+                                                                                  data-title="<i class=&quot;icofont-heart-alt&quot;></i><span>Wishlist</span>"
+                                                                                  rel="nofollow">
+                                                                                  <i
+                                                                                      class="yith-wcwl-icon fa fa-heart-o"></i>
+                                                                                  <span><i
+                                                                                          class="icofont-heart-alt"></i><span>Wishlist</span></span>
+                                                                              </a>
+                                                                          </div>
+
+                                                                          <!-- COUNT TEXT -->
+
+                                                                      </div>
+
+                                                                  </div>
+
+
+
+                                                              </figure>
+
+
+
+                                                          </div>
+                                                          <div class="caption">
+                                                              <div class="meta">
+                                                                  <div class="infor">
+                                                                      <div class="name-subtitle">
+                                                                          <h3 class="name">
+                                                                              <!-- <a
+                                                                                  href="https://mymec.in/product/samsung-32t4450-32inch-smart-led/"> -->
+                                                                                  Samsung
+                                                                                  UA32T4450AKLXL 32Inch Smart
+                                                                                  LED
+                                                                              <!-- </a> -->
+                                                                              </h3>
+
+
+                                                                      </div>
+
+
+                                                                      <div class="rating">
+                                                                          <div class="star-rating">
+                                                                          </div>
+                                                                          <div class="count">(0)</div>
+                                                                      </div>
+                                                                      <span class="price"><del
+                                                                              aria-hidden="true"><span
+                                                                                  class="woocommerce-Price-amount amount"><bdi><span
+                                                                                          class="woocommerce-Price-currencySymbol">₹</span>25,900.00</bdi></span></del>
+                                                                          <ins><span
+                                                                                  class="woocommerce-Price-amount amount"><bdi><span
+                                                                                          class="woocommerce-Price-currencySymbol">₹</span>20,690.00</bdi></span></ins></span>
+
+                                                                  </div>
+                                                              </div>
+                                                              <div class="groups-button clearfix">
+                                                                  <div class="add-cart" title="Read more"><a
+                                                                          href="https://mymec.in/product/samsung-32t4450-32inch-smart-led/"
+                                                                          rel="nofollow"
+                                                                          data-product_id="16714"
+                                                                          data-product_sku="Samsung UA32T4450AKLXL"
+                                                                          data-quantity="1"
+                                                                          class=" button wp-element-button product_type_simple product_type_simple"><i
+                                                                              class="icofont-shopping-cart"></i>
+                                                                          <span class="title-cart">Read
+                                                                              more</span></a></div>
+
+
+                                                                  <div class="yith-compare">
+                                                                      <a href="/product-category/tv-entertainment/televisions/?action=yith-woocompare-add-product&amp;id=16714&amp;_wpnonce=33a3b6b694"
+                                                                          data-toggle="tooltip" title=""
+                                                                          class="compare tbay-tooltip"
+                                                                          data-product_id="16714"
+                                                                          data-original-title="Compare">
+                                                                          <i class="icofont-refresh"></i>
+                                                                      </a>
+                                                                  </div>
+
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+
+
+                                              <div
+                                                  class="col-xs-6 col-lg-4 col-md-4 col-sm-6 grid product type-product post-31733 status-publish instock product_cat-televisions product_cat-tv-entertainment has-post-thumbnail shipping-taxable purchasable product-type-simple">
+                                                  <div class="product-block list" data-product-id="31733">
+                                                      <div class="product-content">
+                                                          <div class="block-inner">
+                                                              <figure class="image">
+                                                                  <!-- <a title="Croam 43 Inch Smart Led TV"
+                                                                      href="https://mymec.in/product/croam-39-5-inch-smart-led-tv-2/"
+                                                                      class="product-image"> -->
+                                                                      <img width="405" height="330"
+                                                                          src="https://mymec.in/wp-content/uploads/2024/03/Croam-43-Inch-Smart-Led-TV-405x330.jpg"
+                                                                          class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                                                          alt="" decoding="async"
+                                                                          loading="lazy"
+                                                                          srcset="https://mymec.in/wp-content/uploads/2024/03/Croam-43-Inch-Smart-Led-TV-405x330.jpg 405w, https://mymec.in/wp-content/uploads/2024/03/Croam-43-Inch-Smart-Led-TV-160x130.jpg 160w"
+                                                                          sizes="(max-width: 405px) 100vw, 405px">
+                                                                  <!-- </a> -->
+
+                                                                  <div class="button-wishlist">
+
+                                                                      <div class="yith-wcwl-add-to-wishlist add-to-wishlist-31733  wishlist-fragment on-first-load"
+                                                                          data-fragment-ref="31733"
+                                                                          data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:31733,&quot;parent_product_id&quot;:31733,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+
+                                                                          <!-- ADD TO WISHLIST -->
+
+                                                                          <div class="yith-wcwl-add-button">
+                                                                              <a href="?add_to_wishlist=31733&amp;_wpnonce=44396b012c"
+                                                                                  class="add_to_wishlist single_add_to_wishlist"
+                                                                                  data-product-id="31733"
+                                                                                  data-product-type="simple"
+                                                                                  data-original-product-id="31733"
+                                                                                  data-title="<i class=&quot;icofont-heart-alt&quot;></i><span>Wishlist</span>"
+                                                                                  rel="nofollow">
+                                                                                  <i
+                                                                                      class="yith-wcwl-icon fa fa-heart-o"></i>
+                                                                                  <span><i
+                                                                                          class="icofont-heart-alt"></i><span>Wishlist</span></span>
+                                                                              </a>
+                                                                          </div>
+
+                                                                          <!-- COUNT TEXT -->
+
+                                                                      </div>
+
+                                                                  </div>
+
+
+
+                                                              </figure>
+
+
+
+                                                          </div>
+                                                          <div class="caption">
+                                                              <div class="meta">
+                                                                  <div class="infor">
+                                                                      <div class="name-subtitle">
+                                                                          <h3 class="name">
+                                                                              <!-- <a
+                                                                                  href="https://mymec.in/product/croam-39-5-inch-smart-led-tv-2/"> -->
+                                                                                  Croam
+                                                                                  43 Inch Smart Led TV
+                                                                              <!-- </a> -->
+                                                                          </h3>
+
+
+                                                                      </div>
+
+
+                                                                      <div class="rating">
+                                                                          <div class="star-rating">
+                                                                          </div>
+                                                                          <div class="count">(0)</div>
+                                                                      </div>
+                                                                      <span class="price"><span
+                                                                              class="woocommerce-Price-amount amount"><bdi><span
+                                                                                      class="woocommerce-Price-currencySymbol">₹</span>21,790.00</bdi></span></span>
+
+                                                                  </div>
+                                                              </div>
+                                                              <div class="groups-button clearfix">
+                                                                  <div class="box-quantity">
+                                                                      <span class="title-qty">Quantity</span>
+                                                                      <div class="quantity">
+                                                                          <label class="screen-reader-text"
+                                                                              for="quantity_66a9e71b0c0d6">Quantity</label>
+                                                                          <input class="minus" type="button"
+                                                                              value="-"
+                                                                              fdprocessedid="9lj9dt">
+                                                                          <input type="number"
+                                                                              id="quantity_66a9e71b0c0d6"
+                                                                              class="input-text qty text"
+                                                                              data-step="1" data-min="1"
+                                                                              data-max="" name="quantity"
+                                                                              value="1" title="Qty" size="4"
+                                                                              placeholder=""
+                                                                              data-inputmode="numeric"
+                                                                              fdprocessedid="z4g2gp">
+                                                                          <input class="plus" type="button"
+                                                                              value="+"
+                                                                              fdprocessedid="xx0khf">
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="add-cart" title="Add to cart"><a
+                                                                          href="?add-to-cart=31733"
+                                                                          rel="nofollow"
+                                                                          data-product_id="31733"
+                                                                          data-product_sku="CROAM LED 43SMT-FLS-512/4-1 Yr"
+                                                                          data-quantity="1"
+                                                                          class=" button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart product_type_simple"><i
+                                                                              class="icofont-shopping-cart"></i>
+                                                                          <span class="title-cart">Add to
+                                                                              cart</span></a></div>
+
+
+                                                                  <div class="yith-compare">
+                                                                      <a href="/product-category/tv-entertainment/televisions/?action=yith-woocompare-add-product&amp;id=31733&amp;_wpnonce=33a3b6b694"
+                                                                          data-toggle="tooltip" title=""
+                                                                          class="compare tbay-tooltip"
+                                                                          data-product_id="31733"
+                                                                          data-original-title="Compare">
+                                                                          <i class="icofont-refresh"></i>
+                                                                      </a>
+                                                                  </div>
+
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+
+
+                                              <div
+                                                  class="col-xs-6 col-lg-4 col-md-4 col-sm-6 grid product type-product post-28980 status-publish last instock product_cat-televisions product_cat-tv-entertainment has-post-thumbnail sale shipping-taxable purchasable product-type-simple">
+                                                  <div class="product-block list" data-product-id="28980">
+                                                      <div class="product-content">
+                                                          <div class="block-inner">
+                                                              <figure class="image">
+
+                                                                  <span class="onsale"><span
+                                                                          class="saled">Save 56%</span></span>
+                                                                  <!-- <a title="TCL 43S615 Bezel-Less Series 4K Ultra HD Smart LED Google TV"
+                                                                      href="https://mymec.in/product/tcl-43s615-bezel-less-series-4k-ultra-hd-smart-led-google-tv/"
+                                                                      class="product-image"> -->
+                                                                      <img width="405" height="330"
+                                                                          src="https://mymec.in/wp-content/uploads/2023/07/New-Project-25-405x330.jpg"
+                                                                          class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                                                          alt="" decoding="async"
+                                                                          loading="lazy"
+                                                                          srcset="https://mymec.in/wp-content/uploads/2023/07/New-Project-25-405x330.jpg 405w, https://mymec.in/wp-content/uploads/2023/07/New-Project-25-160x130.jpg 160w"
+                                                                          sizes="(max-width: 405px) 100vw, 405px">
+                                                                  <!-- </a> -->
+
+                                                                  <div class="button-wishlist">
+
+                                                                      <div class="yith-wcwl-add-to-wishlist add-to-wishlist-28980  wishlist-fragment on-first-load"
+                                                                          data-fragment-ref="28980"
+                                                                          data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:28980,&quot;parent_product_id&quot;:28980,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+
+                                                                          <!-- ADD TO WISHLIST -->
+
+                                                                          <div class="yith-wcwl-add-button">
+                                                                              <a href="?add_to_wishlist=28980&amp;_wpnonce=44396b012c"
+                                                                                  class="add_to_wishlist single_add_to_wishlist"
+                                                                                  data-product-id="28980"
+                                                                                  data-product-type="simple"
+                                                                                  data-original-product-id="28980"
+                                                                                  data-title="<i class=&quot;icofont-heart-alt&quot;></i><span>Wishlist</span>"
+                                                                                  rel="nofollow">
+                                                                                  <i
+                                                                                      class="yith-wcwl-icon fa fa-heart-o"></i>
+                                                                                  <span><i
+                                                                                          class="icofont-heart-alt"></i><span>Wishlist</span></span>
+                                                                              </a>
+                                                                          </div>
+
+                                                                          <!-- COUNT TEXT -->
+
+                                                                      </div>
+
+                                                                  </div>
+
+
+
+                                                              </figure>
+
+
+
+                                                          </div>
+                                                          <div class="caption">
+                                                              <div class="meta">
+                                                                  <div class="infor">
+                                                                      <div class="name-subtitle">
+                                                                          <h3 class="name">
+                                                                              <!-- <a
+                                                                                  href="https://mymec.in/product/tcl-43s615-bezel-less-series-4k-ultra-hd-smart-led-google-tv/"> -->
+                                                                                  TCL
+                                                                                  43S615 Bezel-Less Series 4K
+                                                                                  Ultra HD Smart LED Google
+                                                                                  TV
+                                                                              <!-- </a> -->
+                                                                              </h3>
+
+
+                                                                      </div>
+
+
+                                                                      <div class="rating">
+                                                                          <div class="star-rating">
+                                                                          </div>
+                                                                          <div class="count">(0)</div>
+                                                                      </div>
+                                                                      <span class="price"><del
+                                                                              aria-hidden="true"><span
+                                                                                  class="woocommerce-Price-amount amount"><bdi><span
+                                                                                          class="woocommerce-Price-currencySymbol">₹</span>49,990.00</bdi></span></del>
+                                                                          <ins><span
+                                                                                  class="woocommerce-Price-amount amount"><bdi><span
+                                                                                          class="woocommerce-Price-currencySymbol">₹</span>21,990.00</bdi></span></ins></span>
+
+                                                                  </div>
+                                                              </div>
+                                                              <div class="groups-button clearfix">
+                                                                  <div class="quantity hidden">
+                                                                      <input type="hidden"
+                                                                          id="quantity_66a9e71b0cfb6"
+                                                                          class="qty" name="quantity"
+                                                                          value="1">
+                                                                  </div>
+                                                                  <div class="add-cart" title="Add to cart"><a
+                                                                          href="?add-to-cart=28980"
+                                                                          rel="nofollow"
+                                                                          data-product_id="28980"
+                                                                          data-product_sku="TCL LED 43S615 SMART"
+                                                                          data-quantity="1"
+                                                                          class=" button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart product_type_simple"><i
+                                                                              class="icofont-shopping-cart"></i>
+                                                                          <span class="title-cart">Add to
+                                                                              cart</span></a></div>
+
+
+                                                                  <div class="yith-compare">
+                                                                      <a href="/product-category/tv-entertainment/televisions/?action=yith-woocompare-add-product&amp;id=28980&amp;_wpnonce=33a3b6b694"
+                                                                          data-toggle="tooltip" title=""
+                                                                          class="compare tbay-tooltip"
+                                                                          data-product_id="28980"
+                                                                          data-original-title="Compare">
+                                                                          <i class="icofont-refresh"></i>
+                                                                      </a>
+                                                                  </div>
+
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+
+
+                                              <div
+                                                  class="col-xs-6 col-lg-4 col-md-4 col-sm-6 grid product type-product post-31922 status-publish first instock product_cat-televisions product_cat-tv-entertainment has-post-thumbnail sale shipping-taxable purchasable product-type-simple">
+                                                  <div class="product-block list" data-product-id="31922">
+                                                      <div class="product-content">
+                                                          <div class="block-inner">
+                                                              <figure class="image">
+
+                                                                  <span class="onsale"><span
+                                                                          class="saled">Save 54%</span></span>
+                                                                  <!-- <a title="TCL 43S5400A 108 cm (43 inch) Full HD LED Smart Android TV"
+                                                                      href="https://mymec.in/product/tcl-43s5400a-108-cm-43-inch-full-hd-led-smart-android-tv-with-dolby-audio/"
+                                                                      class="product-image"> -->
+                                                                      <img width="405" height="330"
+                                                                          src="https://mymec.in/wp-content/uploads/2024/03/TCL-43S5400A-405x330.jpg"
+                                                                          class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                                                          alt="" decoding="async"
+                                                                          loading="lazy"
+                                                                          srcset="https://mymec.in/wp-content/uploads/2024/03/TCL-43S5400A-405x330.jpg 405w, https://mymec.in/wp-content/uploads/2024/03/TCL-43S5400A-160x130.jpg 160w"
+                                                                          sizes="(max-width: 405px) 100vw, 405px">
+                                                                  <!-- </a> -->
+
+                                                                  <div class="button-wishlist">
+
+                                                                      <div class="yith-wcwl-add-to-wishlist add-to-wishlist-31922  wishlist-fragment on-first-load"
+                                                                          data-fragment-ref="31922"
+                                                                          data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:31922,&quot;parent_product_id&quot;:31922,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+
+                                                                          <!-- ADD TO WISHLIST -->
+
+                                                                          <div class="yith-wcwl-add-button">
+                                                                              <a href="?add_to_wishlist=31922&amp;_wpnonce=44396b012c"
+                                                                                  class="add_to_wishlist single_add_to_wishlist"
+                                                                                  data-product-id="31922"
+                                                                                  data-product-type="simple"
+                                                                                  data-original-product-id="31922"
+                                                                                  data-title="<i class=&quot;icofont-heart-alt&quot;></i><span>Wishlist</span>"
+                                                                                  rel="nofollow">
+                                                                                  <i
+                                                                                      class="yith-wcwl-icon fa fa-heart-o"></i>
+                                                                                  <span><i
+                                                                                          class="icofont-heart-alt"></i><span>Wishlist</span></span>
+                                                                              </a>
+                                                                          </div>
+
+                                                                          <!-- COUNT TEXT -->
+
+                                                                      </div>
+
+                                                                  </div>
+
+
+
+                                                              </figure>
+
+
+
+                                                          </div>
+                                                          <div class="caption">
+                                                              <div class="meta">
+                                                                  <div class="infor">
+                                                                      <div class="name-subtitle">
+                                                                          <!-- <h3 class="name"><a
+                                                                                  href="https://mymec.in/product/tcl-43s5400a-108-cm-43-inch-full-hd-led-smart-android-tv-with-dolby-audio/"> -->
+                                                                                  TCL
+                                                                                  43S5400A 108 cm (43 inch)
+                                                                                  Full HD LED Smart Android
+                                                                                  TV
+                                                                              <!-- </a> -->
+                                                                              </h3>
+
+
+                                                                      </div>
+
+
+                                                                      <div class="rating">
+                                                                          <div class="star-rating">
+                                                                          </div>
+                                                                          <div class="count">(0)</div>
+                                                                      </div>
+                                                                      <span class="price"><del
+                                                                              aria-hidden="true"><span
+                                                                                  class="woocommerce-Price-amount amount"><bdi><span
+                                                                                          class="woocommerce-Price-currencySymbol">₹</span>49,990.00</bdi></span></del>
+                                                                          <ins><span
+                                                                                  class="woocommerce-Price-amount amount"><bdi><span
+                                                                                          class="woocommerce-Price-currencySymbol">₹</span>22,990.00</bdi></span></ins></span>
+
+                                                                  </div>
+                                                              </div>
+                                                              <div class="groups-button clearfix">
+                                                                  <div class="box-quantity">
+                                                                      <span class="title-qty">Quantity</span>
+                                                                      <div class="quantity">
+                                                                          <label class="screen-reader-text"
+                                                                              for="quantity_66a9e71b0de4a">Quantity</label>
+                                                                          <input class="minus" type="button"
+                                                                              value="-"
+                                                                              fdprocessedid="p11vsr">
+                                                                          <input type="number"
+                                                                              id="quantity_66a9e71b0de4a"
+                                                                              class="input-text qty text"
+                                                                              data-step="1" data-min="1"
+                                                                              data-max="" name="quantity"
+                                                                              value="1" title="Qty" size="4"
+                                                                              placeholder=""
+                                                                              data-inputmode="numeric"
+                                                                              fdprocessedid="6je0sm">
+                                                                          <input class="plus" type="button"
+                                                                              value="+"
+                                                                              fdprocessedid="z6vxzk">
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="add-cart" title="Add to cart"><a
+                                                                          href="?add-to-cart=31922"
+                                                                          rel="nofollow"
+                                                                          data-product_id="31922"
+                                                                          data-product_sku="TCL LED 43S5400A"
+                                                                          data-quantity="1"
+                                                                          class=" button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart product_type_simple"><i
+                                                                              class="icofont-shopping-cart"></i>
+                                                                          <span class="title-cart">Add to
+                                                                              cart</span></a>
+                                                                          </div>
+
+
+                                                                  <div class="yith-compare">
+                                                                      <a href="/product-category/tv-entertainment/televisions/?action=yith-woocompare-add-product&amp;id=31922&amp;_wpnonce=33a3b6b694"
+                                                                          data-toggle="tooltip" title=""
+                                                                          class="compare tbay-tooltip"
+                                                                          data-product_id="31922"
+                                                                          data-original-title="Compare">
+                                                                          <i class="icofont-refresh"></i>
+                                                                      </a>
+                                                                  </div>
+
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+
+
+                                              <div
+                                                  class="col-xs-6 col-lg-4 col-md-4 col-sm-6 grid product type-product post-28921 status-publish outofstock product_cat-televisions product_cat-tv-entertainment has-post-thumbnail sale shipping-taxable purchasable product-type-simple">
+                                                  <div class="product-block list" data-product-id="28921">
+                                                      <div class="product-content">
+                                                          <div class="block-inner">
+                                                              <figure class="image">
+
+                                                                  <span class="onsale"><span
+                                                                          class="saled">Save 16%</span></span>
+                                                                  <!-- <a title="Haier 108 cm (LE43A9000) Ultra HD (4K) LCD Smart Google TV"
+                                                                      href="https://mymec.in/product/haier-108-cm-le43a9000-ultra-hd-4k-lcd-smart-google-tv/"
+                                                                      class="product-image"> -->
+                                                                      <img width="405" height="330"
+                                                                          src="https://mymec.in/wp-content/uploads/2023/07/New-Project-26-405x330.jpg"
+                                                                          class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                                                          alt="" decoding="async"
+                                                                          loading="lazy"
+                                                                          srcset="https://mymec.in/wp-content/uploads/2023/07/New-Project-26-405x330.jpg 405w, https://mymec.in/wp-content/uploads/2023/07/New-Project-26-160x130.jpg 160w"
+                                                                          sizes="(max-width: 405px) 100vw, 405px"><span
+                                                                          class="out-stock">Out of
+                                                                          stock</span>
+                                                                       <!-- </a> -->
+
+                                                                  <div class="button-wishlist">
+
+                                                                      <div class="yith-wcwl-add-to-wishlist add-to-wishlist-28921  wishlist-fragment on-first-load"
+                                                                          data-fragment-ref="28921"
+                                                                          data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:28921,&quot;parent_product_id&quot;:28921,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+
+                                                                          <!-- ADD TO WISHLIST -->
+
+                                                                          <div class="yith-wcwl-add-button">
+                                                                              <a href="?add_to_wishlist=28921&amp;_wpnonce=44396b012c"
+                                                                                  class="add_to_wishlist single_add_to_wishlist"
+                                                                                  data-product-id="28921"
+                                                                                  data-product-type="simple"
+                                                                                  data-original-product-id="28921"
+                                                                                  data-title="<i class=&quot;icofont-heart-alt&quot;></i><span>Wishlist</span>"
+                                                                                  rel="nofollow">
+                                                                                  <i
+                                                                                      class="yith-wcwl-icon fa fa-heart-o"></i>
+                                                                                  <span><i
+                                                                                          class="icofont-heart-alt"></i><span>Wishlist</span></span>
+                                                                              </a>
+                                                                          </div>
+
+                                                                          <!-- COUNT TEXT -->
+
+                                                                      </div>
+
+                                                                  </div>
+
+
+
+                                                              </figure>
+
+
+
+                                                          </div>
+                                                          <div class="caption">
+                                                              <div class="meta">
+                                                                  <div class="infor">
+                                                                      <div class="name-subtitle">
+                                                                          <h3 class="name">
+                                                                              <!-- <a
+                                                                                  href="https://mymec.in/product/haier-108-cm-le43a9000-ultra-hd-4k-lcd-smart-google-tv/"> -->
+                                                                                  Haier
+                                                                                  108 cm (LE43A9000) Ultra HD
+                                                                                  (4K) LCD Smart Google TV
+                                                                              <!-- </a> -->
+                                                                          </h3>
+
+
+                                                                      </div>
+
+
+                                                                      <div class="rating">
+                                                                          <div class="star-rating">
+                                                                          </div>
+                                                                          <div class="count">(0)</div>
+                                                                      </div>
+                                                                      <span class="price"><del
+                                                                              aria-hidden="true"><span
+                                                                                  class="woocommerce-Price-amount amount"><bdi><span
+                                                                                          class="woocommerce-Price-currencySymbol">₹</span>30,990.00</bdi></span></del>
+                                                                          <ins><span
+                                                                                  class="woocommerce-Price-amount amount"><bdi><span
+                                                                                          class="woocommerce-Price-currencySymbol">₹</span>26,000.00</bdi></span></ins></span>
+
+                                                                  </div>
+                                                              </div>
+                                                              <div class="groups-button clearfix">
+                                                                  <div class="add-cart" title="Read more"><a
+                                                                          href="https://mymec.in/product/haier-108-cm-le43a9000-ultra-hd-4k-lcd-smart-google-tv/"
+                                                                          rel="nofollow"
+                                                                          data-product_id="28921"
+                                                                          data-product_sku="HAIER LED LE43A9000"
+                                                                          data-quantity="1"
+                                                                          class=" button wp-element-button product_type_simple product_type_simple"><i
+                                                                              class="icofont-shopping-cart"></i>
+                                                                          <span class="title-cart">Read
+                                                                              more</span></a></div>
+
+
+                                                                  <div class="yith-compare">
+                                                                      <a href="/product-category/tv-entertainment/televisions/?action=yith-woocompare-add-product&amp;id=28921&amp;_wpnonce=33a3b6b694"
+                                                                          data-toggle="tooltip" title=""
+                                                                          class="compare tbay-tooltip"
+                                                                          data-product_id="28921"
+                                                                          data-original-title="Compare">
+                                                                          <i class="icofont-refresh"></i>
+                                                                      </a>
+                                                                  </div>
+
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+
 
 
                                           </div>
@@ -11140,6 +11899,36 @@ role="banner"
                                           <div class="woocommerce widget_price_filter">
                                               <h4>
                                                   Price Range </h4>
+                                              <form method="get"
+                                                  action="https://mymec.in/product-category/tv-entertainment/televisions/">
+                                                  <div class="price_slider_wrapper">
+                                                      <div class="price_slider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
+                                                          style="">
+                                                          <div class="ui-slider-range ui-corner-all ui-widget-header"
+                                                              style="left: 0%; width: 100%;"></div><span
+                                                              tabindex="0"
+                                                              class="ui-slider-handle ui-corner-all ui-state-default"
+                                                              style="left: 0%;"></span><span tabindex="0"
+                                                              class="ui-slider-handle ui-corner-all ui-state-default"
+                                                              style="left: 100%;"></span>
+                                                      </div>
+                                                      <div class="price_slider_amount">
+                                                          <input type="text" id="min_price" name="min_price"
+                                                              value="7999" data-min="7999"
+                                                              placeholder="Min price" style="display: none;">
+                                                          <input type="text" id="max_price" name="max_price"
+                                                              value="564000" data-max="564000"
+                                                              placeholder="Max price" style="display: none;">
+                                                          <button type="submit" class="button">Filter</button>
+                                                          <div class="price_label" style="">
+                                                              Price: <span class="from">₹7,999</span> — <span
+                                                                  class="to">₹564,000</span>
+                                                          </div>
+
+                                                          <div class="clear"></div>
+                                                      </div>
+                                                  </div>
+                                              </form>
                                           </div>
                                       </div>
                                   </div>
@@ -11160,7 +11949,18 @@ role="banner"
                                               <select class="woof_select woof_select_pa_brand" name="pa_brand"
                                                   style="display: none;">
                                                   <option value="0">BRAND</option>
+                                                  <option value="acer">Acer </option>
                                                   <option value="lg">LG </option>
+                                                  <option value="haier">Haier </option>
+                                                  <option value="lloyd">Lloyd </option>
+                                                  <option value="vu">VU </option>
+                                                  <option value="tcl">TCL </option>
+                                                  <option value="sony">Sony </option>
+                                                  <option value="samsung">Samsung </option>
+                                                  <option value="hisense">Hisense </option>
+                                                  <option value="dektron">Dektron </option>
+                                                  <option value="croam">Croam </option>
+                                                  <option value="akiva">Akiva </option>
                                               </select>
                                               <div class="chosen-container chosen-container-single"
                                                   style="width: 910px;" title=""><a class="chosen-single"
@@ -11169,14 +11969,36 @@ role="banner"
                                                   </a>
                                                   <div class="chosen-drop">
                                                       <div class="chosen-search"><input type="text"
-                                                              autocomplete="off" fdprocessedid="8jwj3q"></div>
+                                                              autocomplete="off" fdprocessedid="1o0ly"></div>
                                                       <ul class="chosen-results"></ul>
                                                   </div>
                                               </div>
 
 
+                                              <input type="hidden" value="Acer"
+                                                  data-anchor="woof_n_pa_brand_acer">
                                               <input type="hidden" value="LG"
                                                   data-anchor="woof_n_pa_brand_lg">
+                                              <input type="hidden" value="Haier"
+                                                  data-anchor="woof_n_pa_brand_haier">
+                                              <input type="hidden" value="Lloyd"
+                                                  data-anchor="woof_n_pa_brand_lloyd">
+                                              <input type="hidden" value="VU"
+                                                  data-anchor="woof_n_pa_brand_vu">
+                                              <input type="hidden" value="TCL"
+                                                  data-anchor="woof_n_pa_brand_tcl">
+                                              <input type="hidden" value="Sony"
+                                                  data-anchor="woof_n_pa_brand_sony">
+                                              <input type="hidden" value="Samsung"
+                                                  data-anchor="woof_n_pa_brand_samsung">
+                                              <input type="hidden" value="Hisense"
+                                                  data-anchor="woof_n_pa_brand_hisense">
+                                              <input type="hidden" value="Dektron"
+                                                  data-anchor="woof_n_pa_brand_dektron">
+                                              <input type="hidden" value="Croam"
+                                                  data-anchor="woof_n_pa_brand_croam">
+                                              <input type="hidden" value="Akiva"
+                                                  data-anchor="woof_n_pa_brand_akiva">
                                           </div>
 
                                           <input type="hidden" name="woof_t_pa_brand"
@@ -11698,25 +12520,38 @@ role="banner"
                                               <select class="woof_select woof_select_pa_screen-size"
                                                   name="pa_screen-size" style="display: none;">
                                                   <option value="0">SCREEN SIZE</option>
+                                                  <option value="24-28-inch">24 - 28 inch </option>
+                                                  <option value="28-32-inch">28 - 32 inch </option>
+                                                  <option value="39-43-inch">39 - 43 inch </option>
+                                                  <option value="48-55-inch">48 - 55 inch </option>
+                                                  <option value="65-75-inch">65 - 75 inch </option>
+                                                  <option value="85-inch-above">85 inch &amp; Above </option>
                                               </select>
                                               <div class="chosen-container chosen-container-single"
-                                                  style="width: 0px;" title=""><a class="chosen-single"
+                                                  style="width: 910px;" title=""><a class="chosen-single"
                                                       tabindex="-1"><span>SCREEN SIZE</span>
                                                       <div><b></b></div>
                                                   </a>
                                                   <div class="chosen-drop">
                                                       <div class="chosen-search"><input type="text"
-                                                              autocomplete="off"></div>
+                                                              autocomplete="off" fdprocessedid="2z1nj"></div>
                                                       <ul class="chosen-results"></ul>
                                                   </div>
                                               </div>
-                                              <style type="text/css">
-                                                  .woof_container_pa_screen-size {
-                                                      display: none !important;
-                                                  }
-                                              </style>
 
 
+                                              <input type="hidden" value="24 - 28 inch"
+                                                  data-anchor="woof_n_pa_screen-size_24-28-inch">
+                                              <input type="hidden" value="28 - 32 inch"
+                                                  data-anchor="woof_n_pa_screen-size_28-32-inch">
+                                              <input type="hidden" value="39 - 43 inch"
+                                                  data-anchor="woof_n_pa_screen-size_39-43-inch">
+                                              <input type="hidden" value="48 - 55 inch"
+                                                  data-anchor="woof_n_pa_screen-size_48-55-inch">
+                                              <input type="hidden" value="65 - 75 inch"
+                                                  data-anchor="woof_n_pa_screen-size_65-75-inch">
+                                              <input type="hidden" value="85 inch &amp; Above"
+                                                  data-anchor="woof_n_pa_screen-size_85-inch-above">
                                           </div>
 
                                           <input type="hidden" name="woof_t_pa_screen-size"
@@ -11770,25 +12605,29 @@ role="banner"
                                               <select class="woof_select woof_select_pa_resolution"
                                                   name="pa_resolution" style="display: none;">
                                                   <option value="0">RESOLUTION</option>
+                                                  <option value="full-hd">FULL HD </option>
+                                                  <option value="hd-ready">HD READY </option>
+                                                  <option value="4k">4K / UHD </option>
                                               </select>
                                               <div class="chosen-container chosen-container-single"
-                                                  style="width: 0px;" title=""><a class="chosen-single"
+                                                  style="width: 910px;" title=""><a class="chosen-single"
                                                       tabindex="-1"><span>RESOLUTION</span>
                                                       <div><b></b></div>
                                                   </a>
                                                   <div class="chosen-drop">
                                                       <div class="chosen-search"><input type="text"
-                                                              autocomplete="off"></div>
+                                                              autocomplete="off" fdprocessedid="20i27q"></div>
                                                       <ul class="chosen-results"></ul>
                                                   </div>
                                               </div>
-                                              <style type="text/css">
-                                                  .woof_container_pa_resolution {
-                                                      display: none !important;
-                                                  }
-                                              </style>
 
 
+                                              <input type="hidden" value="FULL HD"
+                                                  data-anchor="woof_n_pa_resolution_full-hd">
+                                              <input type="hidden" value="HD READY"
+                                                  data-anchor="woof_n_pa_resolution_hd-ready">
+                                              <input type="hidden" value="4K / UHD"
+                                                  data-anchor="woof_n_pa_resolution_4k">
                                           </div>
 
                                           <input type="hidden" name="woof_t_pa_resolution"
@@ -11806,25 +12645,38 @@ role="banner"
                                               <select class="woof_select woof_select_pa_technology"
                                                   name="pa_technology" style="display: none;">
                                                   <option value="0">TECHNOLOGY</option>
+                                                  <option value="led">LED </option>
+                                                  <option value="nanocell-suhd">NANOCELL </option>
+                                                  <option value="oled">OLED </option>
+                                                  <option value="qled">QLED </option>
+                                                  <option value="qned">QNED </option>
+                                                  <option value="4k-uhd">4K UHD </option>
                                               </select>
                                               <div class="chosen-container chosen-container-single"
-                                                  style="width: 0px;" title=""><a class="chosen-single"
+                                                  style="width: 910px;" title=""><a class="chosen-single"
                                                       tabindex="-1"><span>TECHNOLOGY</span>
                                                       <div><b></b></div>
                                                   </a>
                                                   <div class="chosen-drop">
                                                       <div class="chosen-search"><input type="text"
-                                                              autocomplete="off"></div>
+                                                              autocomplete="off" fdprocessedid="kq10o"></div>
                                                       <ul class="chosen-results"></ul>
                                                   </div>
                                               </div>
-                                              <style type="text/css">
-                                                  .woof_container_pa_technology {
-                                                      display: none !important;
-                                                  }
-                                              </style>
 
 
+                                              <input type="hidden" value="LED"
+                                                  data-anchor="woof_n_pa_technology_led">
+                                              <input type="hidden" value="NANOCELL"
+                                                  data-anchor="woof_n_pa_technology_nanocell-suhd">
+                                              <input type="hidden" value="OLED"
+                                                  data-anchor="woof_n_pa_technology_oled">
+                                              <input type="hidden" value="QLED"
+                                                  data-anchor="woof_n_pa_technology_qled">
+                                              <input type="hidden" value="QNED"
+                                                  data-anchor="woof_n_pa_technology_qned">
+                                              <input type="hidden" value="4K UHD"
+                                                  data-anchor="woof_n_pa_technology_4k-uhd">
                                           </div>
 
                                           <input type="hidden" name="woof_t_pa_technology"
@@ -11987,25 +12839,38 @@ role="banner"
                                               <select class="woof_select woof_select_pa_connectivity"
                                                   name="pa_connectivity" style="display: none;">
                                                   <option value="0">CONNECTIVITY</option>
+                                                  <option value="bluetooth">Bluetooth </option>
+                                                  <option value="built-in-wifi">Built-In WiFi </option>
+                                                  <option value="ethernet">Ethernet </option>
+                                                  <option value="hdmi">HDMI </option>
+                                                  <option value="usb">USB </option>
+                                                  <option value="wifi">WiFi </option>
                                               </select>
                                               <div class="chosen-container chosen-container-single"
-                                                  style="width: 0px;" title=""><a class="chosen-single"
+                                                  style="width: 910px;" title=""><a class="chosen-single"
                                                       tabindex="-1"><span>CONNECTIVITY</span>
                                                       <div><b></b></div>
                                                   </a>
                                                   <div class="chosen-drop">
                                                       <div class="chosen-search"><input type="text"
-                                                              autocomplete="off"></div>
+                                                              autocomplete="off" fdprocessedid="usun8j"></div>
                                                       <ul class="chosen-results"></ul>
                                                   </div>
                                               </div>
-                                              <style type="text/css">
-                                                  .woof_container_pa_connectivity {
-                                                      display: none !important;
-                                                  }
-                                              </style>
 
 
+                                              <input type="hidden" value="Bluetooth"
+                                                  data-anchor="woof_n_pa_connectivity_bluetooth">
+                                              <input type="hidden" value="Built-In WiFi"
+                                                  data-anchor="woof_n_pa_connectivity_built-in-wifi">
+                                              <input type="hidden" value="Ethernet"
+                                                  data-anchor="woof_n_pa_connectivity_ethernet">
+                                              <input type="hidden" value="HDMI"
+                                                  data-anchor="woof_n_pa_connectivity_hdmi">
+                                              <input type="hidden" value="USB"
+                                                  data-anchor="woof_n_pa_connectivity_usb">
+                                              <input type="hidden" value="WiFi"
+                                                  data-anchor="woof_n_pa_connectivity_wifi">
                                           </div>
 
                                           <input type="hidden" name="woof_t_pa_connectivity"
@@ -12167,25 +13032,26 @@ role="banner"
                                               <select class="woof_select woof_select_pa_functionality"
                                                   name="pa_functionality" style="display: none;">
                                                   <option value="0">FUNCTIONALITY</option>
+                                                  <option value="regular">Regular </option>
+                                                  <option value="smart">Smart </option>
                                               </select>
                                               <div class="chosen-container chosen-container-single"
-                                                  style="width: 0px;" title=""><a class="chosen-single"
+                                                  style="width: 910px;" title=""><a class="chosen-single"
                                                       tabindex="-1"><span>FUNCTIONALITY</span>
                                                       <div><b></b></div>
                                                   </a>
                                                   <div class="chosen-drop">
                                                       <div class="chosen-search"><input type="text"
-                                                              autocomplete="off"></div>
+                                                              autocomplete="off" fdprocessedid="h46jq"></div>
                                                       <ul class="chosen-results"></ul>
                                                   </div>
                                               </div>
-                                              <style type="text/css">
-                                                  .woof_container_pa_functionality {
-                                                      display: none !important;
-                                                  }
-                                              </style>
 
 
+                                              <input type="hidden" value="Regular"
+                                                  data-anchor="woof_n_pa_functionality_regular">
+                                              <input type="hidden" value="Smart"
+                                                  data-anchor="woof_n_pa_functionality_smart">
                                           </div>
 
                                           <input type="hidden" name="woof_t_pa_functionality"
@@ -14872,7 +15738,7 @@ role="banner"
 
 
                                       <button style="float: left;" class="button woof_submit_search_form"
-                                          fdprocessedid="x2ghfr">Filter</button>
+                                          fdprocessedid="tu1g1">Filter</button>
 
                                   </div>
 
@@ -14898,6 +15764,7 @@ role="banner"
 
 
 </div>
+
       <!-- .site-content -->
 
       <footer id="tbay-footer" class="tbay-footer" role="contentinfo">
@@ -16292,30 +17159,6 @@ role="banner"
 	
 	
 	  </script>
-      <script>
-
-        // Example using a fixed exchange rate
-  function convertINRtoAED(amountInINR) {
-    console.log("inise fn",amountInINR);
-   
-    const exchangeRate = 0.045; // Example exchange rate: 1 INR = 0.045 AED
-    const amountInAED = amountInINR * exchangeRate;
-    return amountInAED;
-  }
-  
-  
-  
-  
-  
-  
-        const pricelist=document.getElementsByClassName('woocommerce-Price-amount')
-        for(let x of pricelist){
-         const price=x.innerText.replace(',','')
-         const aedPrice=convertINRtoAED(parseInt(price))
-         x.innerText=''+aedPrice.toFixed(2) +' AED'
-         
-        }
-      </script>
  
   </body>
   
